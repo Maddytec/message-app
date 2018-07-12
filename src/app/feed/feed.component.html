@@ -3,5 +3,5 @@
     <i class="star icon"></i>
     Não existem tweets.
   </div>
-  <app-tweet *ngFor='let currTweet of tweets' [tweet]='currTweet'></app-tweet>
+  <app-tweet *ngFor='let currTweet of tweets' [tweet]='currTweet' (likedTweeChild)='handleLikedTweetFromChildComponent($event)'></app-tweet>
 </div>
