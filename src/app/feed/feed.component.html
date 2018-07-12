@@ -1,0 +1,7 @@
+<div class="ui segment">
+  <div class="ui yellow message" *ngIf='!tweets'>
+    <i class="star icon"></i>
+    Não existem tweets.
+  </div>
+  <app-tweet *ngFor='let currTweet of tweets' [tweet]='currTweet'></app-tweet>
+</div>
